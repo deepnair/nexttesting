@@ -90,7 +90,6 @@ describe('Form tests', () =>  {
         await userEvent.type(getField('email'), 'hello@email.com')
         await userEvent.type(getField('password'), '1234')
         await userEvent.click(getField('submit'))
-        //This can simply be writtent as toBeInTheDocument but this version is shown to demonstrate how to test the textContent of an element
         expect(getField('warning', 'Password is less than 5 characters').textContent).toBe('Password is less than 5 characters')
     })
     //If the confirmPassword field is not the same as the password field you must see "Confirm password should be the same as password" on the screen on pressing the submit button
