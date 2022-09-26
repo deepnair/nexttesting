@@ -49,7 +49,7 @@ describe('Form tests', () =>  {
         expect(confirmPasswordField).toBeInTheDocument
     })
 
-    //Initially the values of each of the fields is empty
+    //Initially the value of each of the fields is empty
     test('Initially the value of each of the fields is empty', () => {
         //Normal way to do it
         // const emailField = screen.getByRole('textbox', {
