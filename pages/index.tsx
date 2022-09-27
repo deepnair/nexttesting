@@ -11,7 +11,7 @@ const Home: NextPage = () => {
   const [warning, setWarning] = useState('')
 
   const setWarningFunction = () => {
-    console.log(!validator.isLength(password, {min: 5}))
+    
     if(!validator.isEmail(email)){
       setWarning('E-mail is not valid')
     }else if(!validator.isLength(password, {min: 5})){
